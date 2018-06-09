@@ -1,10 +1,10 @@
-## Setup
+# Setup
 
-# iterm
+## iterm
 
 Download and install [iTerm2](https://www.iterm2.com/index.html)
 
-# oh-my-zsh
+## oh-my-zsh
 
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
@@ -18,13 +18,13 @@ SH_THEME="half-life"
 )
 ```
 
-#Homebrew
+## Homebrew
 
 Install [Homebrew](https://brew.sh/)
 
 `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-#Pathogen
+## Pathogen
 
 https://github.com/tpope/vim-pathogen
 
@@ -33,11 +33,11 @@ $ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 ```
 
-#MacVim
+## MacVim
 
 https://github.com/macvim-dev/macvim/releases
 
-#YouCompleteMe
+## YouCompleteMe
 
 `$ brew install cmake`
 
@@ -46,7 +46,7 @@ https://github.com/macvim-dev/macvim/releases
 
 May need to install (`xcode-select --install`)
 
-#CommandT
+## CommandT
 
 https://github.com/wincent/command-t
 
