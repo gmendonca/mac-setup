@@ -22,3 +22,7 @@ map <C-n> :NERDTreeToggle<CR>
 execute pathogen#infect()
 let g:CommandTTraverseSCM='pwd'
 map <C-m> :CommandT<CR>
+
+let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1

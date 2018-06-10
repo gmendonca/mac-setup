@@ -62,6 +62,12 @@ make
 
 https://github.com/fatih/vim-go
 
+#NERD COmmenter
+
+https://vimawesome.com/plugin/the-nerd-commenter
+
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdcommenter.git
 
 
 
