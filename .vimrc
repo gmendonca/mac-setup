@@ -13,14 +13,14 @@ endtry
 
 set autochdir
 set nofoldenable    " disable folding
+set nu
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 
 execute pathogen#infect()
-let g:CommandTTraverseSCM='pwd'
 map <C-m> :CommandT<CR>
 
 let g:NERDSpaceDelims = 1
