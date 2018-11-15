@@ -62,7 +62,7 @@ make
 
 https://github.com/fatih/vim-go
 
-#NERD COmmenter
+## NERD COmmenter
 
 https://vimawesome.com/plugin/the-nerd-commenter
 
