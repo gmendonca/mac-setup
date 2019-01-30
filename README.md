@@ -24,13 +24,10 @@ Install [Homebrew](https://brew.sh/)
 
 `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## Pathogen
-
-https://github.com/tpope/vim-pathogen
+## Vundle
 
 ```
-$ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 ## MacVim
@@ -42,7 +39,8 @@ https://github.com/macvim-dev/macvim/releases
 `$ brew install cmake`
 
 `$ cd ~/.vim/bundle/YouCompleteMe`
-`$ ./install.py --clang-completer`
+`git submodule update --init --recursive`
+`$ ./install.py`
 
 May need to install (`xcode-select --install`)
 
@@ -50,26 +48,7 @@ May need to install (`xcode-select --install`)
 
 https://github.com/wincent/command-t
 
-`cd ~/.vim && git clone https://github.com/wincent/command-t.git bundle/command-t`
-
 ```
-cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t
-ruby extconf.rb
-make
+$ cd ~/.vim/bundle/command-t
+$ rake make
 ```
-
-## vim-go
-
-https://github.com/fatih/vim-go
-
-## NERD COmmenter
-
-https://vimawesome.com/plugin/the-nerd-commenter
-
-cd ~/.vim/bundle
-git clone https://github.com/scrooloose/nerdcommenter.git
-
-
-
-	
-	
