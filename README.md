@@ -30,6 +30,14 @@ Install [Homebrew](https://brew.sh/)
 
 `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
+## Vim
+
+Install vim:
+
+```
+$ brew install vim
+```
+
 ## Vimrc
 
 Install [vimrc](https://github.com/amix/vimrc)
