@@ -65,3 +65,18 @@ $ cp .vimrc ~/.vimrc
 ```
 
 Open Vim and type `:PluginInstall`
+
+## CommandT
+
+```
+$ cd .vim/plugged/command-t/ruby/ext/command-t
+$ make clean
+$ ruby extconf.rb
+$ make
+```
+
+## You Complete Me
+
+```
+$ ./install.py --clang-completer --go-completer
+```
