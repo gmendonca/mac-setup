@@ -13,9 +13,15 @@ Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 ```
 SH_THEME="half-life"
 
- plugins=(
+plugins=(
    git
 )
+```
+
+And add this for key binding:
+```
+bindkey "[D" backward-word
+bindkey "[C" forward-word
 ```
 
 ## Homebrew
