@@ -78,5 +78,5 @@ $ make
 ## You Complete Me
 
 ```
-$ ./install.py --clang-completer --go-completer
+$ ./install.py
 ```
