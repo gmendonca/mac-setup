@@ -11,7 +11,7 @@ Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
 ```
-SH_THEME="half-life"
+SH_THEME="agnoster"
 
 plugins=(
    git
@@ -80,3 +80,17 @@ $ make
 ```
 $ ./install.py
 ```
+
+## Fonts
+
+```
+$ git clone https://github.com/powerline/fonts.git
+$  cd fonts
+$  ./install.sh
+```
+
+## Themes for Iterm2
+
+https://github.com/mbadolato/iTerm2-Color-Schemes
+
+* Just Install Argonaut
