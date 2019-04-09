@@ -22,17 +22,29 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'valloric/youcompleteme'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 set autochdir
 set nofoldenable    " disable folding
 set nu
+set mouse=a
+set clipboard=unnamed
 
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 
 map <C-m> :CommandT<CR>
+let g:CommandTSuppressMaxFilesWarning = 1
+
+let g:loaded_matchparen=1
+let g:AutoPairs = {}
 
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
