@@ -26,7 +26,14 @@ Plug 'valloric/youcompleteme'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go'}
+
+Plug 'vim-syntastic/syntastic'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -49,3 +56,6 @@ let g:AutoPairs = {}
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
+
+" Enable integration with airline.
+let g:airline#extensions#ale#enabled = 1
