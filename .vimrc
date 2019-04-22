@@ -42,12 +42,13 @@ set nofoldenable    " disable folding
 set nu
 set mouse=a
 set clipboard=unnamed
+set foldlevel=99
 
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 
-map <C-m> :CommandT<CR>
+map <C-m> :CommandT .<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
 let g:loaded_matchparen=1
