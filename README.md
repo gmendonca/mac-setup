@@ -30,21 +30,12 @@ Install [Homebrew](https://brew.sh/)
 
 `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## Vim
+## NeoVim
 
-Install vim:
-
-```
-$ brew install vim
-```
-
-## Vimrc
-
-Install [vimrc](https://github.com/amix/vimrc)
+Install NeoVim:
 
 ```
-$ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-$ sh ~/.vim_runtime/install_awesome_vimrc.sh
+$ brew install neovim
 ```
 
 ## VimPLug
@@ -53,18 +44,30 @@ Install [VimPlug](https://github.com/junegunn/vim-plug)
 
 ```
 $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+```
+$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 May need to install (`xcode-select --install`)
 
-## Vimrc Template
+## Install NeoVim Python Support
 
 ```
-$ cp .vimrc ~/.vimrc
+$ pip3 install neovim --user
 ```
 
-Open Vim and type `:PluginInstall`
+## init.vim
+
+```
+$ mkdir -p ~/.config/nvim
+$ cp init.vim ~/.config/nvim
+```
+
+Open nvim and type `:PluginInstall`
 
 ## CommandT
 
@@ -78,7 +81,8 @@ $ make
 ## You Complete Me
 
 ```
-$ ./install.py
+$ brew install cmake
+$ python3 install.py --clangd-completer
 ```
 
 ## Fonts
@@ -94,3 +98,11 @@ $  ./install.sh
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
 * Just Install Argonaut
+
+Select the color in Profiles > Colors > Color Presets...
+
+## Keys Setup
+
+Follow this [link](https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards/204802#204802)
+
+I also use option d mapped to sequence escape d
