@@ -97,9 +97,10 @@ $  ./install.sh
 
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
-* Just Install Argonaut
+Select the color in Profiles > Colors > Color Presets... > Import
 
-Select the color in Profiles > Colors > Color Presets...
+And navigate to iTerm2-Color-Schemes > schemes and selects the ones that you want.
+Normally I just Install Argonaut.
 
 ## Keys Setup
 
