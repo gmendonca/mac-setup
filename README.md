@@ -106,3 +106,7 @@ Select the color in Profiles > Colors > Color Presets...
 Follow this [link](https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards/204802#204802)
 
 I also use option d mapped to sequence escape d
+
+## References
+
+* https://gist.github.com/celso/6cefedb9fce92827ee38e8f7411b8b30
