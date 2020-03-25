@@ -1,4 +1,3 @@
-
 syntax on
 set ruler                       " Show the line and column numbers of the cursor.
 set formatoptions+=o            " Continue comment marker in new lines.
@@ -31,7 +30,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'wincent/command-t'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'valloric/youcompleteme'
@@ -40,21 +38,15 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
+Plug '/usr/local/opt/fzf'
 
 call plug#end()
-
-
-
-
-
-
-
 
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 
-map <C-m> :CommandT .<CR>
+map <C-m> :FZF<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
 let g:loaded_matchparen=1

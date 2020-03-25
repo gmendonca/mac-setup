@@ -69,13 +69,10 @@ $ cp init.vim ~/.config/nvim
 
 Open nvim and type `:PluginInstall`
 
-## CommandT
+## fzf
 
 ```
-$ cd .vim/plugged/command-t/ruby/ext/command-t
-$ make clean
-$ ruby extconf.rb
-$ make
+$ brew install fzf
 ```
 
 ## You Complete Me
@@ -93,20 +90,28 @@ $  cd fonts
 $  ./install.sh
 ```
 
-## Themes for Iterm2
+## Themes for Iterm2 (Optional)
 
 https://github.com/mbadolato/iTerm2-Color-Schemes
 
-Select the color in Profiles > Colors > Color Presets... > Import
+Select the color in Profiles > Colors > Color Presets... > Import...
 
 And navigate to iTerm2-Color-Schemes > schemes and selects the ones that you want.
-Normally I just Install Argonaut.
 
 ## Keys Setup
 
 Follow this [link](https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards/204802#204802)
 
 I also use option d mapped to sequence escape d
+
+## Misc things on `.zshrc`:
+
+```
+export EDITOR=nvim
+
+alias n='nvim'
+alias nf='nvim $(fzf)'
+```
 
 ## References
 
