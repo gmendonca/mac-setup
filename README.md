@@ -4,6 +4,8 @@
 
 Download and install [iTerm2](https://www.iterm2.com/index.html)
 
+* Remember to select unlimited scroll on preferences
+
 ## oh-my-zsh
 
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
