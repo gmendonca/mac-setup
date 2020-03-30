@@ -5,6 +5,7 @@
 Download and install [iTerm2](https://www.iterm2.com/index.html)
 
 * Remember to select unlimited scroll on preferences
+* Remember to Allow clipboard access to terminal apps
 
 ## oh-my-zsh
 
