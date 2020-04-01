@@ -37,6 +37,16 @@ Install [Homebrew](https://brew.sh/)
 
 ```
 $ brew install node yarn
+$ brew install gpg # Signing commits
+$ brew install jenv # Java Management
+$ brew install pyenv # python management
+$ brew install jq
+$ brew install wget
+$ brew install ctags
+# java versions
+$ brew cask install homebrew/cask-versions/zulu8
+$ brew cask install homebrew/cask-versions/zulu11
+
 ```
 
 ## NeoVim
@@ -82,6 +92,7 @@ Open nvim and type `:PluginInstall`
 
 ```
 $ brew install fzf
+$ brew install fd
 ```
 
 ## You Complete Me
