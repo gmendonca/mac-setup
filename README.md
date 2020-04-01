@@ -57,6 +57,11 @@ Install NeoVim:
 $ brew install neovim
 ```
 
+And run:
+```
+$ python -m pip install --user --upgrade pynvim
+```
+
 ## VimPLug
 
 Install [VimPlug](https://github.com/junegunn/vim-plug)

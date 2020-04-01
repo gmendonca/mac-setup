@@ -19,12 +19,12 @@ set noerrorbells                " No beeps
 set showcmd                     " Show me what I'm typing
 
 
-set autochdir
 set nofoldenable                " disable folding
 set nu
 set mouse=a
 set clipboard=unnamed
 set foldlevel=99
+let mapleader=","
 
 call plug#begin('~/.vim/plugged')
 
@@ -39,12 +39,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
 Plug '/usr/local/opt/fzf'
+Plug 'dyng/ctrlsf.vim'
 
 call plug#end()
 
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
+map <C-p> :NERDTreeFind<CR>
 
 map <C-m> :FZF<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
@@ -80,10 +82,22 @@ let g:multi_cursor_quit_key='<Esc>'
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_python_binary_path = 'python'
 
 let vim_markdown_preview_github=1
 
+" windown management
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" ctrlsf
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
