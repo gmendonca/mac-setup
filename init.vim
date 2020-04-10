@@ -28,7 +28,7 @@ let mapleader=","
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
