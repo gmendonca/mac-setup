@@ -1,3 +1,7 @@
+ZSH_THEME="agnoster"
+
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+
 export LC_ALL=en_US.UTF-8
 
 # Github GPG

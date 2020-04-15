@@ -13,18 +13,16 @@ Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
-```
-SH_THEME="agnoster"
-
-plugins=(
-   git
-)
-```
-
 And add this for key binding:
 ```
 bindkey "[D" backward-word
 bindkey "[C" forward-word
+```
+
+Install:
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${zsh_custom:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ## Homebrew
