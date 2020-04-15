@@ -44,6 +44,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'jacoborus/tender.vim'
+Plug 'janko/vim-test'
 
 call plug#end()
 
@@ -113,7 +114,23 @@ set copyindent      " copy indent from the previous line
 " Configuration for vim-scala
 au BufRead,BufNewFile *.sbt set filetype=scala
 
+" Vim Scala suggested this
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" Theme
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+colorscheme tender
+
+" Vim Test
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
 
 " CoC Configurations
 " TextEdit might fail if hidden is not set.
@@ -270,10 +287,3 @@ nnoremap <silent> <space>tc :<C-u>CocCommand metals.tvp metalsCompile<CR>
 " Reveal current current class (trait or object) in Tree View 'metalsBuild'
 nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsBuild<CR>
 
-if (has("termguicolors"))
- set termguicolors
-endif
-
-" Theme
-syntax enable
-colorscheme tender
