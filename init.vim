@@ -18,6 +18,7 @@ set nostartofline               " Do not jump to first character with page comma
 set noerrorbells                " No beeps
 set showcmd                     " Show me what I'm typing
 
+set noswapfile                  " Don't use swapfile
 
 set nofoldenable                " disable folding
 set nu
@@ -40,6 +41,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
 Plug '/usr/local/opt/fzf'
 Plug 'dyng/ctrlsf.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'jacoborus/tender.vim'
 
 call plug#end()
 
@@ -71,7 +74,7 @@ let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 let g:airline_powerline_fonts=1
-let g:airline_theme='molokai'
+let g:airline_theme='tender'
 
 " Multicursor
 let g:multi_cursor_use_default_mapping=0
@@ -105,6 +108,11 @@ set shiftwidth=2    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
+
+" Configuration for vim-scala
+au BufRead,BufNewFile *.sbt set filetype=scala
+
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " CoC Configurations
 " TextEdit might fail if hidden is not set.
@@ -159,6 +167,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" Used to expand decorations in worksheets
+nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -243,3 +254,25 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR> 
+
+" Notify coc.nvim that <enter> has been pressed.
+" Currently used for the formatOnType feature.
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Toggle panel with Tree Views
+nnoremap <silent> <space>t :<C-u>CocCommand metals.tvp<CR>
+" Toggle Tree View 'metalsBuild'
+nnoremap <silent> <space>tb :<C-u>CocCommand metals.tvp metalsBuild<CR>
+" Toggle Tree View 'metalsCompile'
+nnoremap <silent> <space>tc :<C-u>CocCommand metals.tvp metalsCompile<CR>
+" Reveal current current class (trait or object) in Tree View 'metalsBuild'
+nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsBuild<CR>
+
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+syntax enable
+colorscheme tender

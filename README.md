@@ -100,11 +100,12 @@ $ brew install fzf
 $ brew install fd
 ```
 
-## You Complete Me
+## CoC
 
 ```
-$ brew install cmake
-$ python3 install.py --clangd-completer
+:CoCInstall coc-python
+$ pip install --user jedi
+:CoCInstall coc-metals
 ```
 
 ## Fonts
