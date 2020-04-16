@@ -45,6 +45,8 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'jacoborus/tender.vim'
 Plug 'janko/vim-test'
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -52,8 +54,10 @@ autocmd VimEnter * wincmd p
 let g:NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$','\.c$']
 
 map <C-m> :FZF<CR>
+map <C-b> :Buffers<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
 let g:loaded_matchparen=1
@@ -286,4 +290,3 @@ nnoremap <silent> <space>tb :<C-u>CocCommand metals.tvp metalsBuild<CR>
 nnoremap <silent> <space>tc :<C-u>CocCommand metals.tvp metalsCompile<CR>
 " Reveal current current class (trait or object) in Tree View 'metalsBuild'
 nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsBuild<CR>
-
