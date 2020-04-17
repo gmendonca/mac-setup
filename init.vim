@@ -57,7 +57,7 @@ map <C-p> :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$','\.c$']
 
 map <C-m> :FZF<CR>
-map <C-b> :Buffers<CR>
+map <C-B> :Buffers<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
 let g:loaded_matchparen=1
