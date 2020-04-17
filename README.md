@@ -140,3 +140,4 @@ alias nf='nvim $(fzf)'
 ## References
 
 * https://gist.github.com/celso/6cefedb9fce92827ee38e8f7411b8b30
+* http://vimcasts.org/episodes/spell-checking/

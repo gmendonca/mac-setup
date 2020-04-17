@@ -25,6 +25,9 @@ set nu
 set mouse=a
 set clipboard=unnamed
 set foldlevel=99
+
+nnoremap <silent> <leader>s :set spell!<cr>
+
 let mapleader=","
 
 call plug#begin('~/.vim/plugged')
@@ -57,7 +60,7 @@ map <C-p> :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$','\.c$']
 
 map <C-m> :FZF<CR>
-map <C-B> :Buffers<CR>
+map <leader>b :Buffers<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
 let g:loaded_matchparen=1
