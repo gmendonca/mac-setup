@@ -137,6 +137,13 @@ alias n='nvim'
 alias nf='nvim $(fzf)'
 ```
 
+## Screenshots location
+
+```
+$ mkdir ~/Pictures/screenshots
+$ defaults write com.apple.screencapture location ~/Pictures/screenshots
+```
+
 ## References
 
 * https://gist.github.com/celso/6cefedb9fce92827ee38e8f7411b8b30
