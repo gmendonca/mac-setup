@@ -63,6 +63,8 @@ map <C-m> :FZF<CR>
 map <leader>b :Buffers<CR>
 let g:CommandTSuppressMaxFilesWarning = 1
 
+map <leader>n :noh<CR>
+
 let g:loaded_matchparen=1
 let g:AutoPairs = {}
 
@@ -114,7 +116,7 @@ inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 map <leader>ts :tabs<CR>
 map <leader>tr :tabr<CR>
 map <leader>tl :tabl<CR>
-map <leader>tm :tabm<CR>
+map <leader>tm :tabm
 
 " spaces and tabs
 set tabstop=22      " number of visual spaces per TAB
