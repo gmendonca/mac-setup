@@ -113,10 +113,22 @@ nnoremap <C-F>t :CtrlSFToggle<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 " tab
-map <leader>ts :tabs<CR>
-map <leader>tr :tabr<CR>
-map <leader>tl :tabl<CR>
-map <leader>tm :tabm
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<CR>
+noremap <leader>ts :tabs<CR>
+noremap <leader>tr :tabr<CR>
+noremap <leader>tl :tabl<CR>
+noremap <leader>tm :tabm
+noremap <leader>to :tabonly<CR>
+noremap <leader>tc :tabclose<CR>
 
 " spaces and tabs
 set tabstop=22      " number of visual spaces per TAB
