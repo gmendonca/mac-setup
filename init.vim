@@ -110,6 +110,12 @@ nnoremap <C-F>o :CtrlSFOpen<CR>
 nnoremap <C-F>t :CtrlSFToggle<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
+" tab
+map <leader>ts :tabs<CR>
+map <leader>tr :tabr<CR>
+map <leader>tl :tabl<CR>
+map <leader>tm :tabm<CR>
+
 " spaces and tabs
 set tabstop=22      " number of visual spaces per TAB
 set softtabstop=2   " number of spaces in tab when editing
