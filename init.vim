@@ -26,7 +26,6 @@ set mouse=a
 set clipboard=unnamed
 set foldlevel=99
 
-nnoremap <silent> <leader>s :set spell!<cr>
 
 let mapleader=","
 
@@ -93,6 +92,9 @@ let g:multi_cursor_next_key='<C-e>'
 let g:multi_cursor_quit_key='<Esc>'
 let g:multi_cursor_quit_key='<Esc>'
 
+" spell checker
+nnoremap <silent> <leader>s :set spell!<cr>
+
 " Vim Markdown Preview
 let vim_markdown_preview_github=1
 
@@ -129,6 +131,13 @@ noremap <leader>tl :tabl<CR>
 noremap <leader>tm :tabm
 noremap <leader>to :tabonly<CR>
 noremap <leader>tc :tabclose<CR>
+
+" Git
+noremap <leader>gt :Git 
+noremap <leader>gs :Git status<CR>
+noremap <leader>ga :Git add 
+
+
 
 " spaces and tabs
 set tabstop=22      " number of visual spaces per TAB
