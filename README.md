@@ -103,8 +103,11 @@ $ brew install fd
 ```
 :CoCInstall coc-python
 $ pip install --user jedi
-:CoCInstall coc-metals
+pip install -U python-dotenv
 ```
+
+Create an `.env` file to the dir you're working on
+and add `PYTHONPATH=./scr/to/python/files`.
 
 ## Fonts
 
