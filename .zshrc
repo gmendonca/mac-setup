@@ -28,5 +28,9 @@ alias nf='nvim $(fzf)'
 alias nfh='nvim $(fd --type f --hidden -E .git | fzf)'
 alias f='fzf'
 alias c='cd $(fd --type d | fzf)'
+alias ni='n ~/.config/nvim/init.vim'
+alias nz='n ~/.zshrc'
 
 export FZF_DEFAULT_COMMAND='fd --type f'
+
+alias sz='source ~/.zshrc'
